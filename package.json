@@ -1,0 +1,41 @@
+{
+  "name": "electron-react-app",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./public/electron.js",
+  "description": "A boilerplate for Scalable Cross-Platform Desktop Apps based on Electron, React, React-router and so on. ",
+  "author": "xuweijian <xuweijian@abcpen.com>",
+  "homepage": "./",
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "electron": "electron .",
+    "electron:url": "cross-env ELECTRON_START_URL='https://webapi.abcpen.com/h5/webh5/pc/?courseId=8989&title=&img=' electron .",
+    "pack": "electron-builder --dir",
+    "dist": "npm run build && electron-builder",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-scripts": "^2.0.4"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "electron": "^3.0.3",
+    "electron-builder": "^20.28.4",
+    "react-app-rewired": "^1.6.2"
+  },
+  "repository": "git@github.com:WeijianXu/electron-react-app.git",
+  "license": "MIT"
+}
