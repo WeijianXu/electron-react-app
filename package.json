@@ -10,9 +10,10 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
-    "electron": "electron .",
+    "electron": "cross-env CONSOLE electron .",
     "electron:url": "cross-env ELECTRON_START_URL='https://webapi.abcpen.com/h5/webh5/pc/?courseId=8989&title=&img=' electron .",
     "pack": "electron-builder --dir",
+    "pack:url": "cross-env ELECTRON_START_URL='https://webapi.abcpen.com/h5/webh5/pc/?courseId=8989&title=&img=' electron-builder --dir",
     "dist": "npm run build && electron-builder",
     "postinstall": "electron-builder install-app-deps"
   },

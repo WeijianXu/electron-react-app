@@ -1,7 +1,6 @@
 # electron-react-app
 
 ## Commonds
----
 ```bash
 npm run start           # start up the project
 npm run build:          # build the project
