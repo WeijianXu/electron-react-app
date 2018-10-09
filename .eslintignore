@@ -1,0 +1,11 @@
+# node_modules
+node_modules/**/*.js
+
+# build
+build/**/*.js
+
+# dist
+dist/**/*.js
+
+# serviceWorker
+src/serviceWorker.js
