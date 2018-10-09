@@ -18,12 +18,26 @@
     "postinstall": "electron-builder install-app-deps"
   },
   "dependencies": {
+    "husky": "^1.1.1",
+    "lint-staged": "^7.3.0",
+    "prettier": "^1.14.3",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-scripts": "^2.0.4"
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,css}": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
   },
   "browserslist": [
     ">0.2%",
@@ -32,9 +46,13 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "babel-preset-airbnb": "^3.0.1",
     "cross-env": "^5.2.0",
     "electron": "^3.0.3",
     "electron-builder": "^20.28.4",
+    "eslint-plugin-react": "^7.11.1",
     "react-app-rewired": "^1.6.2"
   },
   "repository": "git@github.com:WeijianXu/electron-react-app.git",

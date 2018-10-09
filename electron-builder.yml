@@ -1,6 +1,7 @@
 appId: "com.abcpen.electron-react-app"
 productName: "笔声课堂"
 copyright: "Copyright © 2018 abcpen.com"
+files: "./electron.js"
 mac: 
   category: "public.app-category.graphics-design"
 nsis: 
