@@ -3,7 +3,8 @@ env:
   commonjs: true
   es6: true
   node: true
-extends: 'eslint:recommended'
+extends: "airbnb"
+parser: "babel-eslint"
 parserOptions:
   ecmaFeatures:
     jsx: true
@@ -26,3 +27,8 @@ rules:
   semi:
     - error
     - always
+  react/jsx-filename-extension: 
+    - warn
+    - extensions:
+      - ".js"
+      - ".jsx"
