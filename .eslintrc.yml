@@ -31,5 +31,5 @@ rules:
   react/jsx-filename-extension: 
     - warn
     - extensions:
-      - ".js"
+      - ".js" # .js 文件适用
       - ".jsx"
